@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ student[1] }}</h2>
+        <div class="student-info">
+            <h3>Your Information</h3>
+            <p>Student ID: {{ student[0] }}</p>
+            <p>Email: {{ student[2] }}</p>
+            <p>Age: {{ student[3] }}</p>
+            <p>Gender: {{ student[4] }}</p>
+            <p>Phone: {{ student[5] }}</p>
+        </div>
+        <div class="attendance-record">
+            <h3>Your Attendance Record</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                {% for record in attendance %}
+                <tr>
+                    <td>{{ record[0] }}</td>
+                    <td>{{ record[1] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+    </div>
+</body>
+</html>
