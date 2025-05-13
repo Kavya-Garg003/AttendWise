@@ -16,8 +16,8 @@ AttendWise is a web application based on Laravel which keeps track of employee h
 <a href="http://ams.alihost.co">Demo link</a> 
 
   ### Admin credential
-    username:ali@aliatayee.com
-    password:ali123
+    username:admin@dw.com
+    password:12345
 
 
 ### Install & Setup
@@ -78,27 +78,5 @@ $ php artisan serve
 - IDE to edit and run the code (We use Visual Studio Code 🔥).
 - Git to versionning your work.
 
-### Authors
-👤 **Ali**
 
-- GitHub: [@aliatayee](https://github.com/aliatayee)
-- Twitter: [@aqaatayee](https://twitter.com/aqaatayee)
-
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## Contributing
-
-Thank you for considering contributing to the attendance management system!.
 
