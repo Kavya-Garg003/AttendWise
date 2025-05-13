@@ -1,0 +1,63 @@
+name: PHP Laravel CI
+
+# Trigger the workflow on push to the main branch and pull requests
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up PHP environment
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'  # Change this if you are using a different PHP version
+          extensions: mbstring, intl, gd  # Add any required PHP extensions here
+
+      # Step 3: Install Composer (PHP dependency manager)
+      - name: Install Composer
+        run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+      # Step 4: Install PHP dependencies using Composer
+      - name: Install dependencies
+        run: composer install --no-interaction
+
+      # Step 5: Set up MySQL for the application (if you use MySQL)
+      - name: Set up MySQL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mysql-server
+          sudo service mysql start
+          sudo mysql -e "CREATE DATABASE IF NOT EXISTS attendance_system;"  # Replace with your actual database name
+
+      # Step 6: Set environment variables for your Laravel app
+      - name: Set environment variables
+        run: |
+          echo "DB_CONNECTION=mysql" >> .env
+          echo "DB_HOST=127.0.0.1" >> .env
+          echo "DB_PORT=3306" >> .env
+          echo "DB_DATABASE=attendance_system" >> .env
+          echo "DB_USERNAME=root" >> .env
+          echo "DB_PASSWORD=" >> .env
+
+      # Step 7: Run migrations to set up the database
+      - name: Run migrations
+        run: php artisan migrate --env=testing
+
+      # Step 8: Run Laravel tests (if you have any)
+      - name: Run tests
+        run: php artisan test
+
+      # Step 9: Optionally deploy to production or staging if needed
+      # You can add additional steps here for deployment, like using SSH or FTP to deploy to a server.
