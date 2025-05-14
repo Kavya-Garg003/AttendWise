@@ -73,7 +73,7 @@ $ php artisan serve
 - PHP installed
 - Composer installed
 - IDE to edit and run the code (We use Visual Studio Code 🔥).
-- Git to versionning your work.
+- Git to versioning your work.
 
 
 
