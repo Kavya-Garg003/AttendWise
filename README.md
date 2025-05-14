@@ -12,11 +12,9 @@ AttendWise is a web application based on Laravel which keeps track of employee h
 - PHP
 - LARAVEL
 
-## Demo
-<a href="http://ams.alihost.co">Demo link</a> 
 
   ### Admin credential
-    username:admin@dw.com
+    username:nithin@gmail.com
     password:12345
 
 
@@ -66,10 +64,9 @@ $ php artisan serve
 ```
 
 ## Screenshots
-![1](https://user-images.githubusercontent.com/74867463/144262662-b7fbe66e-5c4c-46fb-8bab-9cf3121c2032.png)
-![2](https://user-images.githubusercontent.com/74867463/144262668-545c4d8d-8570-4e38-a769-4c26520e366d.png)
-![3](https://user-images.githubusercontent.com/74867463/144262431-32223a06-8c25-49fd-b969-56a4bab697f2.png)
-![4](https://user-images.githubusercontent.com/74867463/144262645-29d4bfa4-c737-4123-8c22-c8c1fd49477e.png)
+![1](https://drive.google.com/file/d/1HBKb59S2krAmymD1VxuKu0YzyRtuXmC_/view?usp=sharing)
+![2](https://drive.google.com/file/d/1DNoPU0NnSELklzwQFg4OwQo8KsDkDRBa/view?usp=sharing)
+![3](https://drive.google.com/file/d/1Vqrs0A60F-31Ld8sNxl9lfWzJIpzI8bN/view?usp=sharing)
 
 
 ### Prerequisites
