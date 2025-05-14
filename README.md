@@ -64,9 +64,9 @@ $ php artisan serve
 ```
 
 ## Screenshots
-![1](https://drive.google.com/file/d/1HBKb59S2krAmymD1VxuKu0YzyRtuXmC_/view?usp=sharing)
-![2](https://drive.google.com/file/d/1DNoPU0NnSELklzwQFg4OwQo8KsDkDRBa/view?usp=sharing)
-![3](https://drive.google.com/file/d/1Vqrs0A60F-31Ld8sNxl9lfWzJIpzI8bN/view?usp=sharing)
+![1](https://i.postimg.cc/V6386Htd/Whats-App-Image-2025-05-13-at-23-05-37-5d6547b3.jpg)
+![2](https://i.postimg.cc/nzsxntCy/Whats-App-Image-2025-05-13-at-23-06-24-1747a574.jpg)
+![3](https://i.postimg.cc/vm2MRmH7/Whats-App-Image-2025-05-13-at-23-07-31-fcbfaa8f.jpg)
 
 
 ### Prerequisites
